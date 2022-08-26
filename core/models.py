@@ -12,9 +12,6 @@ class Post(models.Model):
     def __str__(self):
         return self.date.strftime('%d/%m/%y')
 
- 
-
-
 class Linkedin_Account(models.Model):
     email = models.EmailField()
     password = models.CharField(max_length=50)
