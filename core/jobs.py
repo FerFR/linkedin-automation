@@ -12,7 +12,7 @@ def post_in_linkedin():
     today = datetime.date.today()
     now = datetime.datetime.now()
     hours = now.hour
-    if len(hours) == 1:
+    if len(str(hours)) == 1:
         hours = f'{hours}0'
     
     posts = Post.objects.filter(date=today)
