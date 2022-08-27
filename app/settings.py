@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-6zb$quz5z3#$jukm+jk2h$oqpmf1ru=p@hng9x^ao7f%fc1_p^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','django-linkedin-automation.herokuapp.com']
 
 
 # Application definition
@@ -38,8 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core',
 ]
-
-
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
