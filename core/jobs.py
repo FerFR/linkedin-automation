@@ -35,7 +35,7 @@ def post_in_linkedin():
             ActionChains(driver).send_keys(post.text).perform()
             driver.implicitly_wait(1)
             driver.find_element_by_xpath('//*[contains(@class, "share-box_actions")]/button').click()
-            sleep(5)
+            sleep(8)
             post.delete()
             driver.close()
 

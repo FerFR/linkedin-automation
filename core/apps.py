@@ -8,6 +8,6 @@ class CoreConfig(AppConfig):
     def ready(self):
         from core.jobs import post_in_linkedin, clear_photos
         scheduler = BackgroundScheduler()
-        scheduler.add_job(post_in_linkedin,'interval',minutes=1)
-        scheduler.add_job(clear_photos,'interval',minutes=1)
+        scheduler.add_job(post_in_linkedin,'interval',minutes=5)
+        scheduler.add_job(clear_photos,'interval',minutes=5)
         scheduler.start()
